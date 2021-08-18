@@ -21,6 +21,9 @@ brew install --cask firefox
 # Install Visual Studio Code
 brew install --cask visual-studio-code
 
+# Install Visual Studio Code
+brew install --cask discord
+
 # Install TablePlus
 brew install --cask tableplus
 
@@ -58,6 +61,7 @@ defaults write com.apple.dock \
                                       "$(__dock_item /Applications/Visual\ Studio\ Code.app)" \
                                       "$(__dock_item /Applications/TablePlus.app)" \
                                       "$(__dock_item /Applications/DBngin.app)" \
+                                      "$(__dock_item /Applications/Discord.app)" \
                                       "$(__dock_item /Applications/Spotify.app)" \
                                       "$(__dock_item /Applications/iTerm.app)" \
                                       "$(__dock_item /Applications/Zeplin.app)" \
