@@ -4,15 +4,10 @@ alias phpunit="vendor/bin/phpunit"
 alias phpunitw="phpunit-watcher watch"
 alias a="php artisan"
 alias ar="php artisan remote"
-alias c="composer"
-alias cu="composer update"
-alias cr="composer require"
-alias ci="composer install"
+alias at="artisan test"
 alias cda="composer dump-autoload -o"
 alias larastan="vendor/bin/phpstan analyse"
 alias hostfile="sudo vi /etc/hosts"
-alias deploy='envoy run deploy'
-alias deploy-code='envoy run deploy-code'
 alias mfs='php artisan migrate:fresh --seed'
 alias nah='git reset --hard;git clean -df'
 alias p="phpunit"
@@ -23,6 +18,12 @@ alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
 alias sail='./vendor/bin/sail'
 alias tunnel='valet share -subdomain=freekmurze -region=eu'
+
+# Deployment
+alias dep="./vendor/bin/dep"
+alias deploy="dep deploy"
+alias depssh="dep ssh"
+
 
 # JavaScript
 alias jest="./node_modules/.bin/jest"

@@ -1,3 +1,18 @@
+# Deploy with commit message
+deploymsg(){
+ gaa
+ gcmsg "$1"
+ gp
+ deploy
+}
+
+# Commit with message and push it
+gcamp(){
+ gaa
+ gcmsg "$1"
+ gp
+}
+
 # Docker
 function ssh-docker() {
    docker exec -it "$@" bash
