@@ -15,11 +15,10 @@ DEFAULT_USER=`whoami`
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git laravel4 laravel5 composer osx vagrant)
+plugins=(git laravel composer osx docker)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=Users/$DEFAULT_USER/.rvm/gems/ruby-2.1.2/bin:$PATH
 #set numeric keys
 # 0 . Enter
 bindkey -s "^[Op" "0"
@@ -54,11 +53,6 @@ for file in ~/.dotfiles-custom/shell/.{exports,aliases,functions,zshrc}; do
 done
 unset file
 
-# Load rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-
-export PATH="$PATH:$HOME/.rvm/bin"
-. $HOME/.dotfiles/shell/z.sh
 
 # Alias hub to git
 eval "$(hub alias -s)"
@@ -82,7 +76,6 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 # Enable autosuggestions
 source ~/.dotfiles/misc/oh-my-zsh-custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # Extra paths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
@@ -92,4 +85,3 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

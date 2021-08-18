@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# Ask for the administrator password upfront
+sudo -v
+
+__dock_item() {
+    printf '%s%s%s%s%s' \
+           '<dict><key>tile-data</key><dict><key>file-data</key><dict>' \
+           '<key>_CFURLString</key><string>' \
+           "$1" \
+           '</string><key>_CFURLStringType</key><integer>0</integer>' \
+           '</dict></dict></dict>'
+}
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Install Firefox
+brew install --cask firefox
+
+# Install Visual Studio Code
+brew install --cask visual-studio-code
+
+# Install TablePlus
+brew install --cask tableplus
+
+# Install TablePlus
+brew install --cask dbngin
+
+# Install Spotify
+brew install --cask spotify 
+
+# Install iTerm2
+brew install --cask iterm2 
+
+# Install Zeplin
+brew install --cask zeplin
+
+# Install Docker
+brew install --cask docker 
+
+# Install ClickUp
+brew install --cask clickup 
+
+# Install Spectacle
+brew install --cask spectacle
+
+# Install Alfred
+brew install --cask alfred
+
+# Wipe all dock icons
+defaults write com.apple.dock persistent-apps -array
+
+printf '%s' 'Setting up Dock icons...'
+defaults write com.apple.dock \
+               persistent-apps -array "$(__dock_item /Applications/Safari.app)" \
+                                      "$(__dock_item /Applications/Firefox.app)" \
+                                      "$(__dock_item /Applications/Visual\ Studio\ Code.app)" \
+                                      "$(__dock_item /Applications/TablePlus.app)" \
+                                      "$(__dock_item /Applications/DBngin.app)" \
+                                      "$(__dock_item /Applications/Spotify.app)" \
+                                      "$(__dock_item /Applications/iTerm.app)" \
+                                      "$(__dock_item /Applications/Zeplin.app)" \
+                                      "$(__dock_item /Applications/Docker.app)" \
+                                      "$(__dock_item /Applications/ClickUp.app)"
+
+for app in "Dock" "Finder"; do
+	killall "${app}" > /dev/null 2>&1
+done
