@@ -66,7 +66,15 @@ defaults write com.apple.dock \
                                       "$(__dock_item /Applications/iTerm.app)" \
                                       "$(__dock_item /Applications/Zeplin.app)" \
                                       "$(__dock_item /Applications/Docker.app)" \
-                                      "$(__dock_item /Applications/ClickUp.app)"
+                                      "$(__dock_item /Applications/ClickUp.app)" \
+                                      "$(__dock_item /System/Applications/Notes.app)"
+
+TODOIST=/Applications/Todoist.app
+
+if [ -d "$TODOIST" ]; then
+    defaults write com.apple.dock persistent-apps -array-add "$(__dock_item $TODOIST)"
+fi
+
 
 for app in "Dock" "Finder"; do
 	killall "${app}" > /dev/null 2>&1
