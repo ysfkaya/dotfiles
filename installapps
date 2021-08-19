@@ -51,6 +51,9 @@ brew install --cask spectacle
 # Install Alfred
 brew install --cask alfred
 
+# Install Alfred
+brew install --cask postman
+
 # Wipe all dock icons
 defaults write com.apple.dock persistent-apps -array
 
@@ -61,6 +64,7 @@ defaults write com.apple.dock \
                                       "$(__dock_item /Applications/Visual\ Studio\ Code.app)" \
                                       "$(__dock_item /Applications/TablePlus.app)" \
                                       "$(__dock_item /Applications/DBngin.app)" \
+                                      "$(__dock_item /Applications/Postman.app)" \
                                       "$(__dock_item /Applications/Discord.app)" \
                                       "$(__dock_item /Applications/Spotify.app)" \
                                       "$(__dock_item /Applications/iTerm.app)" \
