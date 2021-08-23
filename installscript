@@ -127,6 +127,7 @@ pecl install xdebug
 echo 'Install redis'
 echo '-------------'
 pecl install redis
+brew install redis
 
 echo 'Install laravel envoy'
 echo '---------------------'
