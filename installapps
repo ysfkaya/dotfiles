@@ -36,9 +36,6 @@ brew install --cask spotify
 # Install iTerm2
 brew install --cask iterm2 
 
-# Install Zeplin
-brew install --cask zeplin
-
 # Install Docker
 brew install --cask docker 
 
