@@ -25,7 +25,7 @@ brew install --cask visual-studio-code
 brew install --cask discord
 
 # Install Sequel Ace
-brew install --cask tableplus
+brew install --cask sequel-ace
 
 # Install DBngin
 brew install --cask dbngin
