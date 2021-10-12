@@ -24,10 +24,10 @@ brew install --cask visual-studio-code
 # Install Visual Studio Code
 brew install --cask discord
 
-# Install TablePlus
+# Install Sequel Ace
 brew install --cask tableplus
 
-# Install TablePlus
+# Install DBngin
 brew install --cask dbngin
 
 # Install Spotify
@@ -51,7 +51,7 @@ brew install --cask alfred
 # Install Postman
 brew install --cask postman
 
-# Install Postman
+# Install Whatsapp
 brew install --cask whatsapp
 
 # Wipe all dock icons
@@ -62,7 +62,7 @@ defaults write com.apple.dock \
                persistent-apps -array "$(__dock_item /Applications/Safari.app)" \
                                       "$(__dock_item /Applications/Firefox.app)" \
                                       "$(__dock_item /Applications/Visual\ Studio\ Code.app)" \
-                                      "$(__dock_item /Applications/TablePlus.app)" \
+                                      "$(__dock_item /Applications/Sequel\ Ace.app)" \
                                       "$(__dock_item /Applications/DBngin.app)" \
                                       "$(__dock_item /Applications/Postman.app)" \
                                       "$(__dock_item /Applications/Discord.app)" \
