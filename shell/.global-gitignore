@@ -14,7 +14,8 @@ Thumbs.db
 .idea
 
 # vs code
-.vscode
+.vscode/*
+!.vscode/settings.json
 
 # Sublime Text
 *.sublime-project
