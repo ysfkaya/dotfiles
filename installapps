@@ -42,8 +42,8 @@ brew install --cask docker
 # Install ClickUp
 brew install --cask clickup 
 
-# Install Spectacle
-brew install --cask spectacle
+# Install Rectangle
+brew install --cask rectangle
 
 # Install Alfred
 brew install --cask alfred
