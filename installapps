@@ -69,7 +69,6 @@ defaults write com.apple.dock \
                                       "$(__dock_item /Applications/Spotify.app)" \
                                       "$(__dock_item /Applications/Whatsapp.app)" \
                                       "$(__dock_item /Applications/iTerm.app)" \
-                                      "$(__dock_item /Applications/Zeplin.app)" \
                                       "$(__dock_item /Applications/Docker.app)" \
                                       "$(__dock_item /Applications/ClickUp.app)" \
                                       "$(__dock_item /System/Applications/Notes.app)"
