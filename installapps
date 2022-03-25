@@ -54,6 +54,10 @@ brew install --cask postman
 # Install Whatsapp
 brew install --cask whatsapp
 
+# Install PHP Monitor
+brew tap nicoverbruggen/homebrew-cask
+brew install --cask phpmon
+
 # Wipe all dock icons
 defaults write com.apple.dock persistent-apps -array
 
