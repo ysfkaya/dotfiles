@@ -125,14 +125,6 @@ echo '-------------'
 pecl install redis
 brew install redis
 
-echo 'Install laravel envoy'
-echo '---------------------'
-composer global require "laravel/envoy=~2.0"
-
-echo 'Install phpunit-watcher'
-echo '-----------------------'
-composer global require spatie/phpunit-watcher
-
 echo 'Install laravel valet'
 echo '---------------------'
 composer global require laravel/valet
@@ -146,14 +138,6 @@ brew services start mysql
 echo 'Install yarn'
 echo '------------'
 brew install yarn
-
-echo 'Install ghostscript'
-echo '-------------------'
-brew install ghostscript
-
-echo 'Install mackup'
-echo '--------------'
-brew install mackup
 
 echo 'Install zsh-autosuggestions'
 echo '---------------------------'
