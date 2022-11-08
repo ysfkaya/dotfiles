@@ -6,6 +6,7 @@ alias a="php artisan"
 alias ar="php artisan remote"
 alias at="artisan test"
 alias atf="at --filter "
+alias ta="php artisan tenants:run"
 alias cda="composer dump-autoload -o"
 alias larastan="vendor/bin/phpstan analyse"
 alias hostfile="sudo vi /etc/hosts"
@@ -16,7 +17,8 @@ alias pp="php artisan test --parallel"
 alias pf="phpunit --filter "
 alias d="php artisan dusk"
 alias sshconfig="vi ~/.ssh/config"
-alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
+alias copykey='command cat ~/.ssh/id_rsa.pub | pbcopy'
+alias copyprivatekey='command cat ~/.ssh/id_rsa | pbcopy'
 alias sail='./vendor/bin/sail'
 alias tunnel='valet share -subdomain=freekmurze -region=eu'
 
@@ -24,7 +26,6 @@ alias tunnel='valet share -subdomain=freekmurze -region=eu'
 alias dep="./vendor/bin/dep"
 alias deploy="dep deploy"
 alias depssh="dep ssh"
-
 
 # JavaScript
 alias jest="./node_modules/.bin/jest"
@@ -45,7 +46,7 @@ alias l="ls -laF"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
 # PHP
-alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
+alias switch-php81="brew unlink php@7.4 && brew link --overwrite --force php"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 
 # Redis
@@ -80,7 +81,6 @@ alias scrape="scrapeUrl"
 
 # Switch NPM
 alias npmnpm="npm config set registry https://registry.npmjs.org"
-alias npmspatie="npm config set registry https://npm.spatie.be"
 
 # Restart touch bar
 alias touchbar="killall ControlStrip"
