@@ -34,7 +34,7 @@ alias jest="./node_modules/.bin/jest"
 alias gpo="git push origin"
 alias gm="git merge"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias wip="gcamp 'wip'"
+alias wip="gl ; gcamp 'wip'"
 
 # Fast open
 alias o="open ."
@@ -46,7 +46,8 @@ alias l="ls -laF"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
 # PHP
-alias switch-php81="brew unlink php@7.4 && brew link --overwrite --force php"
+alias switch-php82="brew unlink php@7.4 && brew unlink php@8.1 && brew link --overwrite --force php"
+alias switch-php81="brew unlink php@7.4 && brew unlink php@8.2 && brew link --overwrite --force php@8.1"
 alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
 
 # Redis
