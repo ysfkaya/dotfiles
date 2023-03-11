@@ -15,5 +15,3 @@ The bootstrap script can be run by cd-ing into the `.dotfiles` directory and per
 ```bash
 ./bootstrap
 ```
-
-![screenshot](https://freekmurze.github.io/dotfiles/screenshot.png)
