@@ -20,7 +20,7 @@ alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_rsa.pub | pbcopy'
 alias copyprivatekey='command cat ~/.ssh/id_rsa | pbcopy'
 alias sail='./vendor/bin/sail'
-alias tunnel='valet share -subdomain=freekmurze -region=eu'
+alias tunnel='valet share -subdomain=ysfkaya -region=eu'
 
 # Deployment
 alias dep="./vendor/bin/dep"
